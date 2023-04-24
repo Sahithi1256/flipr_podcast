@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro - Podcast website</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+
+  <header class="active" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+     
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#hero" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#podcast" class="navbar-link">Podcast</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Host</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-actions">
+
+          <button class="navbar-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+          <button class="navbar-btn">
+            <ion-icon name="log-in-outline"></ion-icon>
+          </button>
+
+          <button class="navbar-btn">
+            <ion-icon name="cart-outline"></ion-icon>
+          </button>
+
+         
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+          <img src="./assets/images/hero-title.png" alt="Podcast" class="hero-title">
+
+          <div class="hero-btn-group">
+
+            <button class="btn btn-primary">
+              <ion-icon name="headset"></ion-icon>
+
+              <span>Listen Now</span>
+            </button>
+
+            <div class="btn-link-wrapper">
+
+              <p class="btn-title">Subscribe On:</p>
+
+              <a href="#" class="btn-link">
+                <ion-icon name="logo-apple"></ion-icon>
+
+                <span>Apple Music</span>
+              </a>
+
+              <a href="#" class="btn-link">
+                <ion-icon name="logo-soundcloud"></ion-icon>
+
+                <span>SoundCloud</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-banner"></div>
+
+      </section>
+
+
+
+
+
+      <section class="podcast" id="podcast">
+        <ul class="podcast-list">
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-5.png" alt="Tube Preamps, TLM103 vs. OJ 818, Podcastage's Beanies">
+              
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="./podcast/futuristic.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                  
+                  
+                </div>
+              </figure>
+              
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 15, 2023</time>
+
+                  <p class="pod-epi">Episodes: 01</p>
+                </div>
+
+                <h3 class="h3 card-title">The Joe Rogan Experience: Hosted by Joe Rogan</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-8.png" alt="Ask Unladylike: Late Bloomer with Forever 35">
+
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="hello.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 16, 2023</time>
+
+                  <p class="pod-epi">Episodes: 02</p>
+                </div>
+
+                <h3 class="h3 card-title">Stuff You Should Know: Hosted by Josh Clark and Chuck Bryant</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-3.png" alt="How to Effectively Incentivize Team Members">
+
+                <div class="card-banner-icon">
+                  <ion-icon name="play"></ion-icon>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 17, 2023</time>
+
+                  <p class="pod-epi">Episodes: 03</p>
+                </div>
+
+                <h3 class="h3 card-title">This American Life</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-7.png" alt="How to go from Start-Up to Scale-Up">
+
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="hello.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 18, 2023</time>
+
+                  <p class="pod-epi">Episodes: 04</p>
+                </div>
+
+                <h3 class="h3 card-title">How to go from Start-Up to Scale-Up</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-1.png" alt="Deadbuttons – Tired of You | Live at Club Heavy">
+
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="hello.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 19, 2023</time>
+
+                  <p class="pod-epi">Episodes: 05</p>
+                </div>
+
+                <h3 class="h3 card-title">Freakonomics Radio</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-6.png" alt="Boogie Through the Universe with SOWO">
+
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="hello.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 20, 2023</time>
+
+                  <p class="pod-epi">Episodes: 06</p>
+                </div>
+
+                <h3 class="h3 card-title">How I Built This: Hosted by Guy Raz</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-4.png" alt="Glittering Blackness, Fall – 4 | Live at Club Heavy">
+
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="hello.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 21, 2023</time>
+
+                  <p class="pod-epi">Episodes: 07</p>
+                </div>
+
+                <h3 class="h3 card-title">Glittering Blackness, Fall – 4 | Live at Club Heavy</h3>
+              </div>
+
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="podcast-card">
+
+              <figure class="card-banner">
+                <img src="./assets/images/podcast-2.png" alt="The Meditative Photos of Chaelinjane">
+
+                <div class="card-banner-icon">
+                  <audio id="myAudio">
+                    <source src="hello.mp3" type="audio/mpeg">
+                  </audio>
+                  
+                  <ion-icon name="play" onclick="playAudio()"></ion-icon>
+                  <ion-icon name="pause" onclick="pauseAudio()"></ion-icon>
+                  
+                  <script>
+                    var audio = document.getElementById("myAudio");
+                  
+                    function playAudio() {
+                      audio.play();
+                    }
+                  
+                    function pauseAudio() {
+                      audio.pause();
+                    }
+                  </script>
+                </div>
+              </figure>
+
+              <div class="card-content">
+                <div class="card-meta">
+                  <time datetime="2022-02-15">Apr 22, 2023</time>
+
+                  <p class="pod-epi">Episodes: 08</p>
+                </div>
+
+                <h3 class="h3 card-title">The Meditative Photos of Chaelinjane</h3>
+              </div>
+
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
